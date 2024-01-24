@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+<body>
+    <script>
+        let numero = 1;
+
+        if(numero == 1){
+            let texto = "Olá";
+            // Acessando a variável numero
+            numero = 2;
+        }
+
+        // Erro de escopo
+        // console.log(texto);
+
+        // ESCOPO GLOBAL
+        let valor = 12;
+        
+        function umaFuncao(){
+            valor++;
+            console.log(valor);
+        }
+
+        if(valor == 12){
+            console.log(valor);
+            umaFuncao();
+        }
+
+        // ESCOPO DE BLOCO
+        let varGlobal = 1;
+        function funcaoGlobal(){
+            let varFuncao = varGlobal + 1;
+
+            function funcaoLocal(){
+                let varFuncLocal = varFuncao + varGlobal;
+                console.log(varFuncLocal);
+            }
+
+            funcaoLocal();
+            // A variável varFuncLocal não poderá ser acessada aqui
+        }
+
+        funcaoGlobal();
+        // As variáveis varFuncLocal e varFuncao não poderão ser acessadas aqui
+    </script>
+</body>
+</html>

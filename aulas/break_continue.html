@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break e continue</title>
+</head>
+<body>
+    <script>
+        let num = 1;
+
+        while(num < 10){
+            console.log(num);
+            if(num == 6){
+                break;
+            }
+            num++;
+        }
+
+        console.log("------------")
+
+        for(let numero of [1,2,3,4,5,6,7]){
+            console.log(numero);
+            if(numero == 5){
+                break;
+            }
+        }
+
+        console.log("------------")
+
+        for(let numero of [1,2,3,4,5,6,7]){
+            if(numero == 5 || numero == 7){
+                continue;
+            }
+            console.log(numero);
+        }
+    </script>
+</body>
+</html>

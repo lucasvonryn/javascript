@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        let olaMundo = function(){
+            console.log("Olá mundo!");
+            console.log("Olá mundo mais uma vez.");
+            console.log("Olá mundo pela terceira vez.");
+        }
+
+        function saudacao(nome){
+            let string = `Olá ${nome}!`;
+            console.log(string);
+        }
+
+        olaMundo();
+        saudacao("Lucas");
+        saudacao("Ewelin");
+
+        function somar(x, y){
+            let soma = x + y;
+            console.log(`A soma é ${soma}`);
+        }
+
+        somar(1, 3);
+        somar(1, 99);
+        somar(40, 10);
+
+        function multiplicar(x, y){
+            return x * y;
+        }
+
+        let doisVezesTres = multiplicar(2, 3);
+        console.log(doisVezesTres); 
+    </script>
+</body>
+</html>

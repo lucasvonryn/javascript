@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <script>
+        // Teste de comentário
+
+        /*Comentário
+        de multiplas
+        linhas*/
+
+        console.log("Hello world!");
+
+        let number = 5;
+        let resultado = number + 10;
+
+        console.log(resultado);
+        // console.log(number.MAX_VALUE);
+        // console.log(number.MIN_VALUE);
+
+        let olaMundo = 'Olá Mundo!';
+        console.log(olaMundo);
+
+        let caracteresEspeciais = "Lorem \n Ipsum \\ dolor \' \" amet";
+        console.log(caracteresEspeciais);
+
+        let string1 = "Oi ";
+        let string2 = "Lucas!";
+        let oiLucas = string1 + string2;
+        let oiLucas2 = string1.concat(string2);
+        console.log(string1+string2);
+        console.log(oiLucas);
+        console.log(oiLucas2);
+
+        let fraseCompleta = string1.concat(string2, " Tudo bem?");
+        console.log(fraseCompleta);
+
+        let ola = "Olá";
+        let mundo = "Mundo!";
+        let olaMundo2 = `${ola} ${mundo} ${1+1}`;
+        console.log(olaMundo2);
+
+        let verdadeiro = true;
+        let falso = false;
+        let comparacao = 1 == 1; // Retornará true
+        let comparacao2 = 1 > 2; // Retornará false
+        let comparacao3 = "banana" == "banana"; // Retornará true
+        console.log(comparacao);
+        console.log(comparacao2);
+        console.log(comparacao3);
+
+        // true
+        console.log("1" == 1);
+
+        // false
+        console.log("1" === 1);
+
+        // Vetores (arrays)
+        let vetor = [];
+        let vetor2 = [1, 22, 33, 44];
+        let vetor3 = [1, "Olá", true, [1, 2, 3]];
+
+        // Exibirá 22
+        console.log(vetor2[1]);
+        </script>
+</body>
+</html>

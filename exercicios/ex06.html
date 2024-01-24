@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let alunos = [
+            {
+                nome: "Maria",
+                nota: 7.8
+            },
+            {
+                nome: "Pedro",
+                nota: 5
+            },
+            {
+                nome: "Lucas",
+                nota: 10
+            },
+            {
+                nome: "Ewelin",
+                nota: 10
+            },
+            {
+                nome: "Milena",
+                nota: 1
+            },
+            {
+                nome: "Silvana",
+                nota: 2
+            }
+        ]
+
+        // Escreva um loop que percorre o vetor acima e informa se o aluno passou
+        // Condição para passar: nota maior que 7
+
+        /*
+        let i;
+        for(i=0; i<alunos.length; i++){
+            console.log(`Aluno(a): ${alunos[i].nome}`);
+            console.log(`Nota: ${alunos[i].nota}`);
+            if(alunos[i].nota > 7){
+                console.log("Passou");
+            }else{
+                console.log("Não passou");
+            }
+            console.log("-----------------");
+        }
+        */
+
+        for(let aluno of alunos){
+            console.log(`Aluno(a): ${aluno.nome}`);
+            console.log(`Nota: ${aluno.nota}`);
+            if(aluno.nota > 7){
+                console.log("Passou");
+            }else{
+                console.log("Não passou");
+            }
+            console.log("-----------------");
+        }
+    </script>
+</body>
+</html>

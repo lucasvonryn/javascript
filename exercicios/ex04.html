@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let simbolo1 = "R$";
+        let simbolo2 = "$";
+        let simbolo3 = "€";
+
+        // Escreva uma função que receberá um símbolo de moeda
+        // como parâmetro e retornará o nome dela caso conheça
+        // aquele símbolo.
+
+        function reconheceSimbolos(simbolo){
+            let msg;
+
+            switch(simbolo){
+                case "R$":
+                    console.log("Real");
+                    break;
+                case "$":
+                    console.log("Dolar");
+                    break;
+                case "€":
+                    console.log("Euro");
+                    break;
+                default:
+                    console.log("Não encontrado");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
